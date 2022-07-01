@@ -8,8 +8,8 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.mcmouse88.test_ci"
-        minSdk 24
+        applicationId "ru.netology.nmedia"
+        minSdk 23
         targetSdk 32
         versionCode 1
         versionName "1.0"
@@ -21,15 +21,14 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            testCoverageEnabled false
         }
         debug {
-            testCoverageEnabled true
+            testCoverageEnabled = true
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
     kotlinOptions {
         jvmTarget = '1.8'
@@ -40,15 +39,12 @@ android {
     }
 
     testOptions {
-        unitTests {
-            includeAndroidResources = true
-            unitTests.returnDefaultValues = true
-        }
+        unitTests.returnDefaultValues = true
     }
-}
 
-jacoco {
-    toolVersion = '0.8.7'
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {

@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.mcmouse88.test_ci", appContext.packageName)
+        assertEquals("ru.netology.nmedia", appContext.packageName)
     }
 }
