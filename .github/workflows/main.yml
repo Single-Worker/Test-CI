@@ -24,7 +24,7 @@ jobs:
           persist-credentials: false  
 
       - name: Run Test
-        run: test
+        run: ./gradlew test
 
       - name: Build 👷
         run: npm run build      
