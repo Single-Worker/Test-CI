@@ -11,5 +11,5 @@ fun test2(a: Int, b: Int): Int {
 }
 
 fun test3(a: String): String {
-    return a.toUpperCase()
+    return a
 }
