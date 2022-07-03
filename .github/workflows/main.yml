@@ -17,7 +17,7 @@ jobs:
           persist-credentials: false  
 
       - name: Run Test
-        run: ./gradlew test
+        run: ./gradlew connectedAndroidTest
 
       - name: Build
-        run: ./gradlew connectedAndroidTest     
+        run: ./gradlew build     
