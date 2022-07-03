@@ -21,7 +21,7 @@ class ExampleMyTest {
         val a = 4
         val b = 2
         val expected = test2(a, b)
-        Assert.assertEquals(1, expected)
+        Assert.assertEquals(2, expected)
     }
 
     @Test
@@ -29,5 +29,13 @@ class ExampleMyTest {
         val a = "world"
         val expected = "world"
         Assert.assertEquals(a, expected)
+    }
+
+    @Test
+    fun test4() {
+        val a = 2
+        val b = 2
+        val expected = test4(a, b)
+        Assert.assertEquals(4, expected)
     }
 }
